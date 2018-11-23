@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="onClick()">CHANGE</button>
+    <img src="http://localhost:5010/video_feed" alt="">
+
+    <script>
+            function onClick() {
+                console.log("change")
+                let link = document.getElementsByTagName("img")[0].getAttribute("src")
+                if(link == "http://localhost:5010/video_feed"){
+                    document.getElementsByTagName("img")[0].src = "http://localhost:5010/video_feed2" 
+                }else{
+                    document.getElementsByTagName("img")[0].src = "http://localhost:5010/video_feed" 
+                }
+            }
+        </script>
+</body>
+</html>
